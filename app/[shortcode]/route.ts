@@ -13,5 +13,5 @@ export async function GET(
     return new NextResponse("Not found", { status: 404 });
   }
 
-  return NextResponse.redirect(longUrl);
+  return NextResponse.redirect(longUrl, 301);
 }
